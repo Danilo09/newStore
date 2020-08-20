@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./vue.min.js"></script>
+    <title>Technology</title>
+
+</head>
+<body>
+    
+    <div id="app">
+        <section class="produtos">
+            <div v-for="produto in produtos" :key="produto.id" class="produto">
+                <img :src="produto.img" :alt="produto.nome" class="produto_img" />
+            <div> 
+                <span>{{ produto.preco }}</span>
+            </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
